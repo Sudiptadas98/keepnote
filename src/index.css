@@ -1,13 +1,152 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.gnote{
+  background-color: rgb(218, 218, 218);
+  font-family: 'Nunito', sans-serif;
+  min-height: 96.7vh;
+}
+.gnav{
+  background-color: rgb(228, 194, 5);
+  padding: 10px;
+  text-align: center;
+  /* color: white; */
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 6px 8px -2px rgba(87,87,87,1);
+  z-index: 50;
+}
+.notebox{
+  width: 80%;
+  margin: auto;
+}
+.gtakenote{
+  max-width: 400px;
+  min-width: 200px;
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+}
+.ginputs{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 17px -4px rgba(0,0,0,0.75);
+  margin-top: 50px;
+  padding: 15px 40px 20px 13px;
+}
+.ginputs h3{
+  margin-bottom: 2px;
+}
+
+.ginputs input{
+  font-size: 20px;
+  width: 100%;
+  border: none;
+    background: transparent;
+    /* border-bottom: 2px solid #8f8f8f; */
+    outline: none;
+}
+.ginputs textarea{
+  font-size: 15px;
+  width: 100%;
+  border: none;
+    background: transparent;
+    /* border-bottom: 2px solid #8f8f8f; */
+    outline: none;
+}
+.gtakenote button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgb(228, 195, 5);
+  box-shadow: 0px 2px 13px -4px rgba(0,0,0,0.75);
+  float: right;
+  margin-top: -35px;
+  margin-right: -15px;
+  cursor: pointer;
+  font-size: 45px;
+  color: white;
+}
+.gtakenote button:hover{
+  background: white;
+  color: rgb(228, 195, 5);
+}
+.gbody{
+  /* height: 80vh; */
+  width: 100%;
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.gcard{
+  background-color: white;
+  width: fit-content;
+  margin: 20px;
+  border-radius: 7px;
+  padding: 7px 10px 10px 10px;
+  max-width: 300px;
+  min-width: 200px;
+  min-height: 100px;
+  height: fit-content;
+  box-shadow: 0px 2px 17px -4px rgba(0,0,0,0.75);
+  word-wrap: break-word;
+}
+.gcard h2{
+  font-size: 20px;
+  font-weight: 1000;
+  margin-bottom: 8px;
+}
+.gcard i{
+  color: rgb(228, 195, 5);
+  float: right;
+  cursor: pointer;
+}
+.gcard i:hover{
+  color: rgb(255, 82, 82);
+}
+#footer{
+  background-color: rgb(78, 78, 78);
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: white;
+  
+}
+#footer i{
+  color: rgb(255, 100, 100);
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .gbody{
+    padding: 50px 5px;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+  }
+  .gcard{
+    padding: 7px 7px 10px 7px;
+  max-width: 200px;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 12px 6px
+  }
+  .gcard h2{
+    font-size: 15px;
+  }
+  .gcard p{
+    font-size: 11.5px;
+  }
+  .gcard i{
+    font-size: 13px;
+  }
 }
